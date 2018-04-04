@@ -1,0 +1,13 @@
+<?php
+	$dbserver ="localhost";
+	$dbuser = "root";
+	$dbpass = "";
+	$dbname= "test";
+	mysqli_connect($dbserver, $dbuser, $dbpass, $dbname);
+
+	$sql = "Select * from user";
+	result = mysqli_query($sql);
+
+	$fname = $_POST['fname'];
+	$sql = "Insert into usr(fname) VLAUES ('$fname')";
+?>
